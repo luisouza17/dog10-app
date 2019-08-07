@@ -1,12 +1,60 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Bem-vindo ao Dog 10 ! 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <!--1-->
+  <ion-card>
+    <img src="./assets/hot1.jpg"/>
+    <ion-card-header>
+      <ion-card-subtitle color="danger">R$ 15.00</ion-card-subtitle>
+      <ion-card-title>Upper Hotdog</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Com os melhores ingredientes do mercado e em parceira com a renomada Red Nose, O Upper HotDog conta com toda suculência e sabor que você deseja a cada mordida! 
+    </ion-card-content>
+    <ion-button color="danger" expand="block" [routerLink]="['/finalizar-pedido']">
+        <ion-icon slot='start' name="card"></ion-icon>
+        Comprar
+      </ion-button>
+  </ion-card>
+    <!--2-->
+  <ion-card>
+      <img src="./assets/hot3.jpg"/>
+      <ion-card-header>
+        <ion-card-subtitle color="danger">R$ 16.00</ion-card-subtitle>
+        <ion-card-title>New York</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+          Com os melhores ingredientes do mercado e em parceira com a renomada Red Nose, O New York conta com toda suculência e sabor que você deseja a cada mordida! 
+        </ion-card-content>
+        <ion-button color="danger" expand="block"[routerLink]="['/finalizar-pedido']">
+          <ion-icon slot='start' name="card"></ion-icon>
+          Comprar
+        </ion-button>
+    </ion-card>
+    <!--3-->
+    <ion-card>
+        <img src="./assets/hot2.png"/>
+        <ion-card-header>
+          <ion-card-subtitle color="danger">R$ 15.00</ion-card-subtitle>
+          <ion-card-title>Mr.Andrew</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          O Mr.Andrew te levará para outra dimensão a cada mordida. 
+        </ion-card-content>
+        <ion-button color="danger" expand="block"[routerLink]="['/finalizar-pedido']">
+            <ion-icon slot='start' name="card"></ion-icon>
+            Comprar
+          </ion-button>
+          <br>
+          <br>
+      </ion-card>
 </ion-content>
